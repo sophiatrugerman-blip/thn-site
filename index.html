@@ -1,48 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
 <body>
-  <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+  <!-- NAV -->
+  <nav class="navbar">
+    <a href="index.html" class="logo-link">
+      <img src="assets/logo.png" alt="The Human Network" class="logo">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="archives.html">Archives</a></li>
+      <li><a href="get-involved.html">Get Involved</a></li>
+      <li><a href="journal.html">The Journal</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to My Website</h1>
-      <p>This is a simple starter page.</p>
-      <button>Get Started</button>
-    </section>
+  <!-- HERO -->
+  <section class="hero">
+    <h1 class="hero-title">the<br>human<br>network</h1>
+  </section>
 
-    <section>
-      <h2>About</h2>
-      <p>Add your text here.</p>
-    </section>
+  <!-- QUOTE SLIDER -->
+  <section class="quote-slider">
+    <img src="assets/quote-bg.jpg" alt="" class="quote-bg">
+    <button class="arrow arrow-left" id="prevQuote" aria-label="Previous quote">&#8592;</button>
+    <div class="quote-content">
+      <blockquote id="quoteText"></blockquote>
+      <p id="quoteSource"></p>
+    </div>
+    <button class="arrow arrow-right" id="nextQuote" aria-label="Next quote">&#8594;</button>
+  </section>
 
-    <section>
-      <h2>Services</h2>
-      <p>Add your services here.</p>
-    </section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>Email: hello@example.com</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2026 My Website</p>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <img src="assets/logo.png" alt="The Human Network" class="footer-logo">
+    <div class="footer-content">
+      <h3>CONNECT WITH US!</h3>
+      <p>Email: thehumannetwork8@gmail.com</p>
+      <p>Instagram: @thehumannetwork_</p>
+      <div class="social-icons">
+        <a href="mailto:thehumannetwork8@gmail.com" aria-label="Email">✉</a>
+        <a href="https://instagram.com/thehumannetwork_" target="_blank" aria-label="Instagram">📷</a>
+      </div>
+      <p class="legal">The Human Network is a registered 501(c)(3) nonprofit organization. EIN: 33-4644615</p>
+      <p class="legal">All donations are tax-deductible to the fullest extent allowed by law.</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
-</html>
