@@ -1,48 +1,97 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #222;
-  background: #f8f8f8;
-}
-
-nav {
+/* NAV */
+.navbar {
   display: flex;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
-  background: #111;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #4a7ebb;
 }
-
-nav a {
+.logo { height: 60px; }
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+}
+.nav-links a {
   color: white;
   text-decoration: none;
+  font-size: 1.1rem;
 }
+.nav-links a.active { text-decoration: underline; }
 
+/* HERO */
 .hero {
-  padding: 80px 20px;
+  background: #4a7ebb radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.1) 60%, transparent 70%);
   text-align: center;
-  background: #eaeaea;
+  padding: 100px 20px;
+}
+.hero-title {
+  font-family: 'Playfair Display', serif; /* swap for your logo's actual font */
+  font-weight: 900;
+  font-size: 4.5rem;
+  color: #4a7ebb;
+  line-height: 1.1;
 }
 
-button {
-  background: #111;
+/* QUOTE SLIDER */
+.quote-slider {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.quote-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.quote-content { max-width: 700px; padding: 0 80px; }
+#quoteText {
+  font-family: serif;
+  font-style: italic;
+  font-size: 2rem;
   color: white;
+}
+#quoteSource {
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.2);
   border: none;
-  padding: 12px 24px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-section {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #111;
   color: white;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
 }
+.arrow-left { left: 30px; }
+.arrow-right { right: 30px; }
+
+/* FOOTER */
+.site-footer {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  align-items: flex-start;
+}
+.footer-logo { width: 100px; height: 100px; }
+.social-icons { display: flex; gap: 15px; margin: 15px 0; }
+.social-icons a {
+  border: 1px solid #4a7ebb;
+  border-radius: 8px;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #4a7ebb;
+}
+.legal { font-size: 0.85rem; color: #444; }
