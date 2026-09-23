@@ -1,3 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* NAV */
 .navbar {
   display: flex;
@@ -6,7 +22,7 @@
   padding: 20px 40px;
   background: #4a7ebb;
 }
-.logo { height: 60px; }
+.logo { height: 60px; width: auto; }
 .nav-links {
   display: flex;
   list-style: none;
@@ -85,7 +101,7 @@
   padding: 40px;
   align-items: flex-start;
 }
-.footer-logo { width: 100px; height: 100px; }
+.footer-logo { width: 100px; height: 100px; object-fit: contain; }
 .social-icons { display: flex; gap: 15px; margin: 15px 0; }
 .social-icons a {
   border: 1px solid #4a7ebb;
@@ -93,5 +109,6 @@
   padding: 8px 12px;
   text-decoration: none;
   color: #4a7ebb;
+  display: inline-flex;
 }
 .legal { font-size: 0.85rem; color: #444; }
