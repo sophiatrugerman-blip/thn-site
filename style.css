@@ -21,16 +21,16 @@
 
 /* HERO */
 .hero {
-  background: #4a7ebb radial-gradient(circle, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.1) 60%, transparent 70%);
-  text-align: center;
+  background: #4a7ebb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 100px 20px;
 }
-.hero-title {
-  font-family: 'Playfair Display', serif; /* swap for your logo's actual font */
-  font-weight: 900;
-  font-size: 4.5rem;
-  color: #4a7ebb;
-  line-height: 1.1;
+.hero-logo {
+  max-width: 500px;
+  width: 80%;
+  height: auto;
 }
 
 /* QUOTE SLIDER */
