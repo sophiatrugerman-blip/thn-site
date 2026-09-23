@@ -2,8 +2,19 @@ const quotes = [
   {
     text: `"To whomever may be reading this - you are loved, you matter, keep going."`,
     source: "The Human Network, Ann Arbor"
+  },
+  {
+    text: `"Everything happens for a reason, my friends! Even when life gets hard, you are exactly where you are supposed to be. There is always a new adventure around the corner. Take control of your life & practice gratitude everyday."`,
+    source: "The Human Network, Tucson"
+  },
+  {
+    text: `"Take long deep breaths. Put your feet in the grass. Drink a glass of water. Hug your favorite people."`,
+    source: "The Human Network, Chicago"
+  },
+  {
+    text: `"You are loved for who you are and nothing can ever take that away from you."`,
+    source: "The Human Network, New York City"
   }
-  // add more quote objects here — I'll drop them in once you send the rest
 ];
 
 let currentQuote = 0;
