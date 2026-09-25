@@ -9,9 +9,6 @@ html, body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   color: #222;
 }
@@ -24,7 +21,7 @@ img {
 /* PAGE HERO WRAPPER (nav + quotes share this background) */
 .page-hero {
   position: relative;
-  flex: 1;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -131,10 +128,10 @@ img {
 .site-footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 30px;
   padding: 20px 40px;
   background: white;
+  color: #0056a8;
 }
 .footer-logo {
   width: 60px;
@@ -142,32 +139,36 @@ img {
   object-fit: contain;
   flex-shrink: 0;
 }
-.footer-main {
+.footer-body {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
-.footer-main h3 {
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.footer-row h3,
+.footer-row p {
+  flex: 1;
+  color: #0056a8;
+  font-family: 'Poppins', sans-serif;
+}
+.footer-row h3 {
   font-size: 0.95rem;
-  margin-bottom: 6px;
 }
-.footer-main p {
+.footer-row p {
   font-size: 0.85rem;
   line-height: 1.5;
 }
-.footer-main,
-.footer-main a {
+.footer-row a {
   color: #0056a8;
-  font-family: 'Poppins', sans-serif;
-}
-.footer-main a {
   text-decoration: underline;
 }
-.footer-legal {
-  flex: 1;
+.footer-row .legal {
   text-align: right;
-}
-.legal {
   font-size: 0.75rem;
-  color: #0056a8;
-  font-family: 'Poppins', sans-serif;
   line-height: 1.4;
 }
