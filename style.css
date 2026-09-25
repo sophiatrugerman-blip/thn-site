@@ -35,24 +35,11 @@ img {
 }
 .nav-links a.active { text-decoration: underline; }
 
-/* HERO */
-.hero {
-  background: #4a7ebb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 20px;
-}
-.hero-logo {
-  max-width: 500px;
-  width: 80%;
-  height: auto;
-}
 
 /* QUOTE SLIDER */
 .quote-slider {
   position: relative;
-  min-height: 400px;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,7 +54,23 @@ img {
   object-fit: cover;
   z-index: -1;
 }
-.quote-content { max-width: 700px; padding: 0 80px; }
+.quote-content {
+  position: relative;
+  max-width: 700px;
+  padding: 0 80px;
+  overflow: hidden;
+}
+.quote-inner {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.quote-inner.slide-out-left {
+  transform: translateX(-60px);
+  opacity: 0;
+}
+.quote-inner.slide-out-right {
+  transform: translateX(60px);
+  opacity: 0;
+}
 #quoteText {
   font-family: serif;
   font-style: italic;
@@ -90,6 +93,7 @@ img {
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 50%;
+  z-index: 2;
 }
 .arrow-left { left: 30px; }
 .arrow-right { right: 30px; }
