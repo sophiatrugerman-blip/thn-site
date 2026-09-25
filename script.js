@@ -18,20 +18,30 @@ const quotes = [
 ];
 
 let currentQuote = 0;
+const quoteInner = document.getElementById('quoteInner');
 
 function renderQuote(index) {
   document.getElementById('quoteText').textContent = quotes[index].text;
   document.getElementById('quoteSource').textContent = `Quote from ${quotes[index].source}`;
 }
 
-document.getElementById('prevQuote').addEventListener('click', () => {
-  currentQuote = (currentQuote - 1 + quotes.length) % quotes.length;
-  renderQuote(currentQuote);
-});
+function changeQuote(direction) {
+  // direction: 'left' means going to next (content slides out left), 'right' means going to prev
+  const outClass = direction === 'left' ? 'slide-out-left' : 'slide-out-right';
+  quoteInner.classList.add(outClass);
 
-document.getElementById('nextQuote').addEventListener('click', () => {
-  currentQuote = (currentQuote + 1) % quotes.length;
-  renderQuote(currentQuote);
-});
+  setTimeout(() => {
+    if (direction === 'left') {
+      currentQuote = (currentQuote + 1) % quotes.length;
+    } else {
+      currentQuote = (currentQuote - 1 + quotes.length) % quotes.length;
+    }
+    renderQuote(currentQuote);
+    quoteInner.classList.remove(outClass);
+  }, 500); // matches the 0.5s CSS transition
+}
+
+document.getElementById('nextQuote').addEventListener('click', () => changeQuote('left'));
+document.getElementById('prevQuote').addEventListener('click', () => changeQuote('right'));
 
 renderQuote(currentQuote); // show first quote on load
