@@ -4,36 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Human Network</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <a href="index.html" class="logo-link">
-      <img src="assets/logo.png" alt="The Human Network" class="logo">
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="archives.html">Archives</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
-      <li><a href="journal.html">The Journal</a></li>
-      <li><a href="donate.html">Donate</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
+  <div class="page-hero">
+    <img src="assets/quote-bg.jpg" alt="" class="page-bg-img">
 
-  <section class="quote-slider">
-    <img src="assets/quote-bg.jpg" alt="" class="quote-bg">
-    <button class="arrow arrow-left" id="prevQuote" aria-label="Previous quote">&#8592;</button>
-    <div class="quote-content">
-      <div class="quote-inner" id="quoteInner">
-        <blockquote id="quoteText"></blockquote>
-        <p id="quoteSource"></p>
+    <nav class="navbar">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.png" alt="The Human Network" class="logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="archives.html">Archives</a></li>
+        <li><a href="get-involved.html">Get Involved</a></li>
+        <li><a href="journal.html">The Journal</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="quote-slider">
+      <button class="arrow arrow-left" id="prevQuote" aria-label="Previous quote">&#8592;</button>
+      <div class="quote-content">
+        <div class="quote-inner" id="quoteInner">
+          <blockquote id="quoteText"></blockquote>
+          <p id="quoteSource"></p>
+        </div>
       </div>
-    </div>
-    <button class="arrow arrow-right" id="nextQuote" aria-label="Next quote">&#8594;</button>
-  </section>
+      <button class="arrow arrow-right" id="nextQuote" aria-label="Next quote">&#8594;</button>
+    </section>
+  </div>
 
   <footer class="site-footer">
     <img src="assets/logo.png" alt="The Human Network" class="footer-logo">
@@ -43,7 +50,7 @@
       <p>Instagram: @thehumannetwork_</p>
       <div class="social-icons">
         <a href="mailto:thehumannetwork8@gmail.com" aria-label="Email">✉</a>
-        <a href="https://instagram.com/thehumannetwork_" target="_blank" aria-label="Instagram">📷</a>
+        <a href="https://www.instagram.com/thehumannetwork_/?hl=en" target="_blank" aria-label="Instagram">📷</a>
       </div>
       <p class="legal">The Human Network is a registered 501(c)(3) nonprofit organization. EIN: 33-4644615</p>
       <p class="legal">All donations are tax-deductible to the fullest extent allowed by law.</p>
