@@ -175,7 +175,7 @@ img {
 
 /* ABOUT PAGE — HERO */
 .about-top {
-  background: #0056a8;
+  background: #bfe4ff;
 }
 .about-hero {
   display: flex;
@@ -183,7 +183,7 @@ img {
   align-items: center;
   gap: 40px;
   padding: 40px 60px 80px;
-  color: white;
+  color: #1a3a5c;
 }
 .about-hero-image,
 .about-hero-text {
@@ -195,15 +195,16 @@ img {
   height: auto;
 }
 .about-hero-text p {
-  margin-bottom: 16px;
-  line-height: 1.6;
-  font-size: 0.95rem;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-size: 1.15rem;
 }
 .pink-heading {
-  color: #f4a6c8;
+  color: #26b9f0;
   text-decoration: underline;
   font-family: 'Poppins', sans-serif;
-  margin: 24px 0 12px;
+  font-size: 1.8rem;
+  margin: 28px 0 14px;
 }
 .pink-heading:first-child {
   margin-top: 0;
