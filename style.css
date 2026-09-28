@@ -307,45 +307,65 @@ img {
 /* ARCHIVES PAGE */
 .archives-top {
   background: #bfe4ff;
+  padding-bottom: 60px;
 }
 .archives-header {
   text-align: center;
-  padding: 40px 20px 60px;
-  color: #1a3a5c;
+  padding: 50px 20px 40px;
 }
 .archives-header h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
-  margin-bottom: 12px;
+  font-style: italic;
+  font-size: 3.2rem;
+  color: #0056a8;
+  letter-spacing: 1px;
+  display: inline-block;
+  border-bottom: 3px solid #26b9f0;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
 }
 .archives-header p {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
+  color: #1a3a5c;
 }
 
 .archives-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  padding: 60px 60px;
-  background: white;
+  padding: 20px 60px 0;
 }
 .archive-card {
   text-align: center;
 }
 .archive-card h3 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.3rem;
   color: #0056a8;
   margin-bottom: 4px;
 }
 .archive-location {
-  color: #666;
-  font-size: 0.9rem;
+  font-family: 'Poppins', sans-serif;
+  color: #1a3a5c;
+  font-size: 0.95rem;
   margin-bottom: 16px;
 }
 .flipbook-wrap iframe {
   width: 100%;
-  height: 400px;
+  height: 460px;
   border: 1px solid lightgray;
   border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .archives-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .archives-grid {
+    grid-template-columns: 1fr;
+  }
 }
