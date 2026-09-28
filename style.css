@@ -200,7 +200,7 @@ img {
   font-size: 1.15rem;
 }
 .pink-heading {
-  color: #0158aa;
+  color: #bfe4ff;
   text-decoration: underline;
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
@@ -258,7 +258,7 @@ img {
 
 /* ABOUT PAGE — RESOURCES */
 .resources {
-  background: white;
+  background: #bfe4ff;
   padding: 60px 40px;
   text-align: center;
 }
