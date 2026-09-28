@@ -303,3 +303,49 @@ img {
   font-weight: 600;
   text-decoration: underline;
 }
+
+/* ARCHIVES PAGE */
+.archives-top {
+  background: #bfe4ff;
+}
+.archives-header {
+  text-align: center;
+  padding: 40px 20px 60px;
+  color: #1a3a5c;
+}
+.archives-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+.archives-header p {
+  font-size: 1.1rem;
+}
+
+.archives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 40px;
+  padding: 60px 60px;
+  background: white;
+}
+.archive-card {
+  text-align: center;
+}
+.archive-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: #0056a8;
+  margin-bottom: 4px;
+}
+.archive-location {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+.flipbook-wrap iframe {
+  width: 100%;
+  height: 400px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+}
