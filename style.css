@@ -63,12 +63,9 @@ img {
 .nav-links a.active {
   text-decoration: underline;
 }
-.navbar-light {
-  background: #0056a8 !important;
-}
 .navbar-light .nav-links a,
 .nav-links-dark a {
-  color: white;
+  color: #0056a8;
   text-shadow: none;
 }
 .navbar-light .nav-links a.active,
