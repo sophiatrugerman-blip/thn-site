@@ -369,3 +369,53 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* DONATE PAGE */
+.donate-top {
+  background: #bfe4ff;
+}
+.navbar-light .nav-links a,
+.nav-links-dark a {
+  color: #0056a8;
+  text-shadow: none;
+}
+.navbar-light .nav-links a.active,
+.nav-links-dark a.active {
+  text-decoration: underline;
+}
+
+.donate-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px 60px 80px;
+  align-items: flex-start;
+}
+.donate-left {
+  flex: 1;
+  min-width: 320px;
+}
+.donate-left h1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 3.2rem;
+  color: #0056a8;
+  margin-bottom: 20px;
+}
+.donate-left p {
+  font-family: 'Poppins', sans-serif;
+  color: #1a3a5c;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+.donate-left img {
+  width: 100%;
+  border-radius: 16px;
+}
+.donate-right {
+  flex: 1;
+  min-width: 310px;
+  display: flex;
+  justify-content: center;
+}
