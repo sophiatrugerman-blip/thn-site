@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - The Human Network</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="contact-top">
+    <nav class="navbar navbar-light">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.png" alt="The Human Network" class="logo">
+      </a>
+      <ul class="nav-links nav-links-dark">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="archives.html">Archives</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="contact-hero">
+      <h1>Contact us anytime! We'd love for you to join our community and celebrate our stories together.</h1>
+      <p class="contact-subtext">Reach out about partnerships, getting involved, or anything else — we'd love to hear from you.</p>
+    </section>
+
+    <section class="contact-form-section">
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <h2>Name</h2>
+        <div class="name-row">
+          <div class="form-field">
+            <label>First Name <span>(required)</span></label>
+            <input type="text" name="first_name" required>
+          </div>
+          <div class="form-field">
+            <label>Last Name <span>(required)</span></label>
+            <input type="text" name="last_name" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label>Email <span>(required)</span></label>
+          <input type="email" name="email" required>
+        </div>
+
+        <div class="form-field">
+          <label>Message <span>(required)</span></label>
+          <textarea name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="send-btn">SEND</button>
+      </form>
+    </section>
+  </div>
+
+  <section class="team-section">
+    <h2>Meet the Team</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="assets/team-morgan.jpg" alt="Morgan Millstein">
+        <h3>Morgan Millstein</h3>
+        <p>Co-founder</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/team-sophia.jpg" alt="Sophia Trugerman">
+        <h3>Sophia Trugerman</h3>
+        <p>Co-founder</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <img src="assets/logo.png" alt="The Human Network" class="footer-logo">
+    <div class="footer-body">
+      <div class="footer-row">
+        <h3>CONNECT WITH US!</h3>
+        <span></span>
+      </div>
+      <div class="footer-row">
+        <p>Email: <a href="mailto:thehumannetwork8@gmail.com">thehumannetwork8@gmail.com</a></p>
+        <p class="legal">The Human Network is a registered 501(c)(3) nonprofit organization. EIN: 33-4644615</p>
+      </div>
+      <div class="footer-row">
+        <p>Instagram: <a href="https://www.instagram.com/thehumannetwork_/?hl=en" target="_blank">@thehumannetwork_</a></p>
+        <p class="legal">All donations are tax-deductible to the fullest extent allowed by law.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
