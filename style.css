@@ -417,7 +417,7 @@ img {
 .donate-left img {
   width: 100%;
   flex: 1;
-  max-height: 600px;
+  max-height: 550px;
   object-fit: cover;
   object-position: bottom;
   border-radius: 16px;
