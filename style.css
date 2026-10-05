@@ -198,6 +198,7 @@ img {
 .about-hero-image img {
   width: 100%;
   height: auto;
+  border-radius: 16px;
 }
 .about-hero-text p {
   margin-bottom: 20px;
@@ -392,7 +393,7 @@ img {
   flex-wrap: wrap;
   gap: 50px;
   padding: 30px 60px 80px;
-  align-items: stretch;
+  align-items: center;
 }
 .donate-left {
   flex: 1.2;
@@ -500,9 +501,9 @@ img {
 }
 .team-member img {
   width: 220px;
-  height: 220px;
+  height: 280px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 16px;
   margin: 0 auto 16px;
 }
 .team-member h3 {
