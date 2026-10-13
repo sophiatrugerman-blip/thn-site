@@ -12,26 +12,21 @@
 </head>
 <body>
 
-  <div class="page-hero">
-    <img src="assets/quote-bg.png" alt="" class="page-bg-img">
-
+    <div class="page-hero">
+    <img src="assets/quote-bg.jpg" alt="" class="page-bg-img">
+  
     <nav class="navbar">
-      <a href="index.html" class="logo-link">
-        <img src="assets/logo.png" alt="The Human Network" class="logo">
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="archives.html">Archives</a></li>
-        <li><a href="partnerships.html">Partnerships</a></li>
-        <li><a href="donate.html">Donate</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      ...same as before...
     </nav>
-
+  
+    <section class="hero-tagline">
+      <p>A 501(c)(3) nonprofit building connection through anonymous, shared journals.</p>
+    </section>
+  
     <section class="quote-slider">
       <button class="arrow arrow-left" id="prevQuote" aria-label="Previous quote">&#8592;</button>
       <div class="quote-content">
+        <p class="quote-descriptor" id="quoteDescriptor"></p>
         <div class="quote-inner" id="quoteInner">
           <blockquote id="quoteText"></blockquote>
           <p id="quoteSource"></p>
@@ -40,7 +35,6 @@
       <button class="arrow arrow-right" id="nextQuote" aria-label="Next quote">&#8594;</button>
     </section>
   </div>
-
   <footer class="site-footer">
     <img src="assets/logo.png" alt="The Human Network" class="footer-logo">
   
