@@ -930,3 +930,9 @@ img {
 .home-cta h2 { font-size: 3rem; }
 .home-cta p { color: #1a3a5c; font-size: 1.05rem; margin: 0 auto 30px; }
 .home-cta .hero-buttons { justify-content: center; }
+
+.quote-card #quoteText {
+  color: #0056a8;
+  text-shadow: none;
+  font-size: 1.9rem;
+}
