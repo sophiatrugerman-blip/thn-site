@@ -7,14 +7,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="page-hero">
-    <img src="assets/quote-bg.png" alt="" class="page-bg-img">
-  
+  <section class="home-hero">
     <nav class="navbar">
       <a href="index.html" class="logo-link">
         <img src="assets/logo.png" alt="The Human Network" class="logo">
@@ -28,26 +25,79 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-  
-    <section class="hero-tagline">
-      <p>A 501(c)(3) nonprofit building connection through anonymous, shared journals.</p>
-    </section>
-  
-    <section class="quote-slider">
-      <button class="arrow arrow-left" id="prevQuote" aria-label="Previous quote">&#8592;</button>
-      <div class="quote-content">
-        <p class="quote-descriptor" id="quoteDescriptor"></p>
-        <div class="quote-inner" id="quoteInner">
-          <blockquote id="quoteText"></blockquote>
-          <p id="quoteSource"></p>
+
+    <div class="home-hero-inner">
+      <div class="home-hero-text">
+        <span class="eyebrow">501(c)(3) NONPROFIT</span>
+        <h1>A journal. A stranger's story. Your own.</h1>
+        <p>We place anonymous journals in cafés, camps, and waiting rooms. Pick one up, read what people left behind, and add a page of your own. No names, no pressure, just connection.</p>
+        <div class="hero-buttons">
+          <a href="archives.html" class="btn btn-white">Read the archive</a>
+          <a href="partnerships.html" class="btn btn-outline">Partner with us</a>
         </div>
       </div>
-      <button class="arrow arrow-right" id="nextQuote" aria-label="Next quote">&#8594;</button>
-    </section>
-  </div>
+
+      <div class="quote-card-wrap">
+        <div class="quote-card">
+          <div class="quote-inner" id="quoteInner">
+            <p class="quote-label" id="quoteLabel"></p>
+            <blockquote id="quoteText"></blockquote>
+          </div>
+          <div class="quote-controls">
+            <button class="quote-arrow" id="prevQuote" aria-label="Previous quote">&#8592;</button>
+            <div class="quote-dots" id="quoteDots"></div>
+            <button class="quote-arrow filled" id="nextQuote" aria-label="Next quote">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-steps">
+    <h2>How it works</h2>
+    <p class="section-sub">Connection, one page at a time. It takes about five minutes.</p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <span class="step-num">1</span>
+        <h3>Find a journal</h3>
+        <p>We leave them in third places: coffee shops, camps, waiting rooms, and more.</p>
+      </div>
+      <div class="step-card">
+        <span class="step-num">2</span>
+        <h3>Read, then write</h3>
+        <p>Flip through strangers' stories, then add an entry of your own. Always anonymous.</p>
+      </div>
+      <div class="step-card dark">
+        <span class="step-num">3</span>
+        <h3>Leave it for the next person</h3>
+        <p>Your words become part of a growing community, and a digital archive anyone can read.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-values">
+    <div class="values-text">
+      <h2>Why it matters</h2>
+      <p>One in five U.S. adults experiences mental illness each year, and nearly half don't get help. We exist to reduce isolation and stigma by building a public, shared space where people can reflect and feel seen.</p>
+    </div>
+    <div class="values-list">
+      <div class="value-card"><h3>Honesty</h3><p>Real words, unfiltered and unsigned.</p></div>
+      <div class="value-card"><h3>Access</h3><p>Connection should be easy to find and free to join.</p></div>
+      <div class="value-card"><h3>Intention</h3><p>Every journal is placed with care.</p></div>
+    </div>
+  </section>
+
+  <section class="home-cta">
+    <h2>Everyone has a story worth telling.</h2>
+    <p>Help us put a journal in more communities.</p>
+    <div class="hero-buttons">
+      <a href="donate.html" class="btn btn-blue">Donate</a>
+      <a href="contact.html" class="btn btn-blue-outline">Get in touch</a>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <img src="assets/logo.png" alt="The Human Network" class="footer-logo">
-  
     <div class="footer-body">
       <div class="footer-row">
         <h3>CONNECT WITH US!</h3>
