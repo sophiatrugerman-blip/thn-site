@@ -1001,16 +1001,41 @@ img {
   .home-cta { padding: 60px 24px; }
 
   /* About */
-  .about-hero { padding: 24px 24px 50px; gap: 30px; }
-  .about-hero-image, .about-hero-text { min-width: 0; }
+  .about-hero {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px 24px 50px;
+    gap: 30px;
+  }
+  .about-hero-image,
+  .about-hero-text {
+    flex: none;
+    width: 100%;
+    min-width: 0;
+  }
   .about-hero-text p { font-size: 1.05rem; }
   .pink-heading { font-size: 1.7rem; }
   .our-story { padding: 50px 20px; }
   .our-story h2 { font-size: 2rem; }
-  .story-card { min-width: 0; padding: 24px; }
+  .story-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .story-card {
+    flex: none;
+    width: 100%;
+    max-width: 420px;
+    min-width: 0;
+    padding: 24px;
+  }
+  .story-card img {
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+  }
   .resources { padding: 50px 20px; }
   .resources h2 { font-size: 1.8rem; }
-
+  
   /* Archives */
   .archives-header h1 { font-size: 2.4rem; }
   .archives-grid { padding: 20px 20px 0; }
