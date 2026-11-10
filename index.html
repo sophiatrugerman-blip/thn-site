@@ -7,10 +7,21 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/journal-collage.jpg">
+  <script>
+    (function () {
+      var r = document.documentElement, seen = false;
+      try { seen = sessionStorage.getItem('thnIntroSeen') === '1'; } catch (e) {}
+      if (!seen) r.classList.add('intro-lock');
+    })();
+  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div id="intro">
+  <div id="introBase"></div>
+  <button class="intro-hint" id="introHint" aria-label="Scroll to enter the site">Scroll to open &#8595;</button>
+</div>
   <section class="home-hero">
     <nav class="navbar">
       <a href="index.html" class="logo-link">
@@ -26,28 +37,32 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-
-    <div class="home-hero-inner">
-      <div class="home-hero-text">
-        <span class="eyebrow">501(c)(3) NONPROFIT</span>
-        <h1>A local stranger's story. Your own reflection. The next person's reminder.</h1>
-        <p>We place anonymous journals in community spaces inviting people to pick one up, read what people left behind, and add a page of your own. No names, no pressure, just authentic connection.</p>
-        <div class="hero-buttons">
-          <a href="archives.html" class="btn btn-white">Read the archive</a>
-          <a href="partnerships.html" class="btn btn-outline">Partner with us</a>
-        </div>
-      </div>
-
-      <div class="quote-card-wrap">
-        <div class="quote-card">
-          <div class="quote-inner" id="quoteInner">
-            <p class="quote-label" id="quoteLabel"></p>
-            <blockquote id="quoteText"></blockquote>
+  
+    <div class="hero-stage">
+      <div class="book">
+        <img class="book-img" src="assets/open-book.png" alt="">
+  
+        <div class="book-page book-left">
+          <span class="eyebrow">501(c)(3) NONPROFIT</span>
+          <h1>A journal. A stranger's story. Your own.</h1>
+          <p>We place anonymous journals in cafés, camps, and waiting rooms. Pick one up, read what people left behind, and add a page of your own. No names, no pressure, just connection.</p>
+          <div class="hero-buttons">
+            <a href="archives.html" class="btn btn-blue">Read the archive</a>
+            <a href="partnerships.html" class="btn btn-blue-outline">Partner with us</a>
           </div>
-          <div class="quote-controls">
-            <button class="quote-arrow" id="prevQuote" aria-label="Previous quote">&#8592;</button>
-            <div class="quote-dots" id="quoteDots"></div>
-            <button class="quote-arrow filled" id="nextQuote" aria-label="Next quote">&#8594;</button>
+        </div>
+  
+        <div class="book-page book-right">
+          <div class="quote-card">
+            <div class="quote-inner" id="quoteInner">
+              <p class="quote-label" id="quoteLabel"></p>
+              <blockquote id="quoteText"></blockquote>
+            </div>
+            <div class="quote-controls">
+              <button class="quote-arrow" id="prevQuote" aria-label="Previous quote">&#8592;</button>
+              <div class="quote-dots" id="quoteDots"></div>
+              <button class="quote-arrow filled" id="nextQuote" aria-label="Next quote">&#8594;</button>
+            </div>
           </div>
         </div>
       </div>
