@@ -125,7 +125,7 @@ if (document.getElementById('quoteInner')) {
       setTimeout(finish, 520);
       return;
     }
-    crumple();
+    try { crumple(); } catch (e) { finish(); }
   }
 
   function crumple() {
@@ -205,13 +205,11 @@ if (document.getElementById('quoteInner')) {
 
       // crumple inward, pause, then scatter outward
       runs.push(sh.el.animate([
-        { transform: 'translate(0,0) rotate(0deg) scale(1)', offset: 0, easing: 'cubic-bezier(.45,0,.25,1)' },
-        { transform: squashed, offset: 0.5 },
-        { transform: squashed, offset: 0.58, easing: 'cubic-bezier(.12,.7,.3,1)' },
-        { transform: burst, offset: 1 },
-        { opacity: 1, offset: 0 },
-        { opacity: 1, offset: 0.82 },
-        { opacity: 0, offset: 1 }
+        { offset: 0, transform: 'translate(0,0) rotate(0deg) scale(1)', opacity: 1, easing: 'cubic-bezier(.45,0,.25,1)' },
+        { offset: 0.5, transform: squashed, opacity: 1 },
+        { offset: 0.58, transform: squashed, opacity: 1, easing: 'cubic-bezier(.12,.7,.3,1)' },
+        { offset: 0.82, opacity: 1 },
+        { offset: 1, transform: burst, opacity: 0 }
       ], timing));
       // darker, creased look while it crumples
       sh.shade.animate([
