@@ -92,7 +92,6 @@ if (document.getElementById('quoteInner')) {
     intro.remove();
     root.classList.remove('intro-lock');
     window.scrollTo(0, 0);
-    try { sessionStorage.setItem('thnIntroSeen', '1'); } catch (e) {}
   }
 
   function onWheel(e) { if (Math.abs(e.deltaY) > 4) start(); }
@@ -228,3 +227,7 @@ if (document.getElementById('quoteInner')) {
   window.addEventListener('touchmove', onTouchMove, { passive: true });
   intro.addEventListener('click', start);
 })();
+
+window.addEventListener('pageshow', function (e) {
+  if (e.persisted && document.querySelector('.home-hero')) location.reload();
+});
