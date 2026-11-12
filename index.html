@@ -7,14 +7,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  
   <link rel="preload" as="image" href="assets/journal-collage.jpg">
-  <script>
-    (function () {
-      var r = document.documentElement, seen = false;
-      try { seen = sessionStorage.getItem('thnIntroSeen') === '1'; } catch (e) {}
-      if (!seen) r.classList.add('intro-lock');
-    })();
-  </script>
+  <script>document.documentElement.classList.add('intro-lock');</script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
